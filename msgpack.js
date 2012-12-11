@@ -438,7 +438,8 @@ function encode(value, view, offset) {
   
   // undefined
   if (type === "undefined") {
-    view.setUint8(offset, 0xc4);
+    //view.setUint8(offset, 0xc4);
+    view.setUint8(offset, 0xc0);
     return 1;
   }
   
